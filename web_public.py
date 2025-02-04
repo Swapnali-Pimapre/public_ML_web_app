@@ -41,7 +41,7 @@ if st.button('Diabetes Test Result'):
                       BMI, DiabetesPedigreeFunction, Age]
     user_input= [float(x) for x in user_input]
     diab_prediction= diabetes_model.predict([user_input])
-    if diab_prediction[0]==1:
+    if diab_prediction[0]==0:
         diab_diagnosis= 'The person is diabetic'
     else:
         diab_diagnosis= 'The person is not diabetic'
