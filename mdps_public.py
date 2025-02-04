@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May  8 21:01:15 2022
 
-@author: siddhardhan
-"""
 
 import pickle
 import streamlit as st
@@ -11,6 +6,9 @@ from streamlit_option_menu import option_menu
 
 
 # loading the saved models
+st.set_page_config(page_title='Prediction of Disease Outbreaks',
+                   layout='wide',
+                   page_icon="🧑‍⚕️")
 
 diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
